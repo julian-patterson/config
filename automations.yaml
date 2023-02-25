@@ -1,1 +1,22 @@
-[]
+- id: '1677363368959'
+  alias: good-morning-automation
+  description: ''
+  trigger:
+  - platform: event
+    event_type: good-morning-scene
+  condition: []
+  action:
+  - service: script.good_morning
+    data: {}
+  mode: single
+- id: '1677363483330'
+  alias: bed-time-automation
+  description: ''
+  trigger:
+  - platform: event
+    event_type: bed-time-scene
+  condition: []
+  action:
+  - service: script.bed_time
+    data: {}
+  mode: single
