@@ -1,0 +1,600 @@
+- id: '1677357332630'
+  name: night-light
+  entities:
+    light.bed_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      color_mode: color_temp
+      brightness: 13
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      friendly_name: Bed Lamp
+      supported_features: 32
+      state: 'on'
+    light.desk_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      color_mode: color_temp
+      brightness: 13
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      friendly_name: Desk Lamp
+      supported_features: 32
+      state: 'on'
+    light.bed_strip:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      friendly_name: Bed Strip
+      supported_features: 0
+      state: 'off'
+  icon: mdi:bed
+  metadata:
+    light.bed_strip:
+      entity_only: true
+- id: '1677357454844'
+  name: brightness-100
+  entities:
+    light.bed_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Bed Lamp
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      state: 'on'
+    light.desk_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Desk Lamp
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      state: 'on'
+    light.bed_strip:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      friendly_name: Bed Strip
+      supported_features: 0
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 2985
+      color_temp: 335
+      hs_color:
+      - 27.85
+      - 57.304
+      rgb_color:
+      - 255
+      - 176
+      - 108
+      xy_color:
+      - 0.498
+      - 0.383
+      state: 'on'
+  metadata:
+    light.bed_strip:
+      entity_only: true
+- id: '1677357481229'
+  name: brightness-75
+  entities:
+    light.bed_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Bed Lamp
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 191
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      state: 'on'
+    light.desk_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Desk Lamp
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 191
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      state: 'on'
+    light.bed_strip:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      friendly_name: Bed Strip
+      supported_features: 0
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 2915
+      color_temp: 343
+      hs_color:
+      - 27.971
+      - 59.254
+      rgb_color:
+      - 255
+      - 174
+      - 103
+      xy_color:
+      - 0.505
+      - 0.385
+      state: 'on'
+  metadata:
+    light.bed_strip:
+      entity_only: true
+- id: '1677357526326'
+  name: brightness-50
+  entities:
+    light.bed_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Bed Lamp
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 128
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      state: 'on'
+    light.desk_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Desk Lamp
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 128
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      state: 'on'
+    light.bed_strip:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      friendly_name: Bed Strip
+      supported_features: 0
+      color_mode: color_temp
+      brightness: 135
+      color_temp_kelvin: 2409
+      color_temp: 415
+      hs_color:
+      - 29.125
+      - 75.922
+      rgb_color:
+      - 255
+      - 155
+      - 61
+      xy_color:
+      - 0.557
+      - 0.389
+      state: 'on'
+  metadata:
+    light.bed_strip:
+      entity_only: true
+- id: '1677357560884'
+  name: brightness-25
+  entities:
+    light.bed_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Bed Lamp
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 64
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      state: 'on'
+    light.desk_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Desk Lamp
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 64
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      state: 'on'
+    light.bed_strip:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      friendly_name: Bed Strip
+      supported_features: 0
+      color_mode: color_temp
+      brightness: 135
+      color_temp_kelvin: 2392
+      color_temp: 418
+      hs_color:
+      - 29.174
+      - 76.581
+      rgb_color:
+      - 255
+      - 154
+      - 59
+      xy_color:
+      - 0.559
+      - 0.389
+      state: 'on'
+  metadata:
+    light.bed_strip:
+      entity_only: true
+- id: '1677357585412'
+  name: brightness-15
+  entities:
+    light.bed_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Bed Lamp
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 38
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      state: 'on'
+    light.desk_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Desk Lamp
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 38
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      state: 'on'
+    light.bed_strip:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      friendly_name: Bed Strip
+      supported_features: 0
+      state: 'off'
+  metadata:
+    light.bed_strip:
+      entity_only: true
+- id: '1677357872069'
+  name: turn-on-lights
+  entities:
+    light.bed_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Bed Lamp
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      state: 'on'
+    light.desk_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Desk Lamp
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 2500
+      color_temp: 400
+      hs_color:
+      - 28.874
+      - 72.522
+      rgb_color:
+      - 255
+      - 159
+      - 70
+      xy_color:
+      - 0.546
+      - 0.389
+      state: 'on'
+    switch.basement_lamp:
+      friendly_name: Basement lamp
+      state: 'on'
+    light.bed_strip:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      friendly_name: Bed Strip
+      supported_features: 0
+      color_mode: color_temp
+      brightness: 255
+      color_temp_kelvin: 2832
+      color_temp: 353
+      hs_color:
+      - 28.125
+      - 61.661
+      rgb_color:
+      - 255
+      - 171
+      - 97
+      xy_color:
+      - 0.513
+      - 0.386
+      state: 'on'
+  metadata:
+    light.bed_strip:
+      entity_only: true
+- id: '1677357959314'
+  name: turn-off-lights
+  entities:
+    light.bed_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Bed Lamp
+      supported_features: 32
+      state: 'off'
+    switch.basement_lamp:
+      friendly_name: Basement lamp
+      state: 'off'
+    light.desk_lamp:
+      min_color_temp_kelvin: 2500
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 400
+      supported_color_modes:
+      - brightness
+      - color_temp
+      - hs
+      friendly_name: Desk Lamp
+      supported_features: 32
+      state: 'off'
+    light.bed_strip:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      friendly_name: Bed Strip
+      supported_features: 0
+      state: 'off'
+  metadata:
+    light.bed_strip:
+      entity_only: true
+- id: '1677358032384'
+  name: turn-off-lamp
+  entities:
+    switch.basement_lamp:
+      friendly_name: Basement lamp
+      state: 'off'
+  metadata: {}

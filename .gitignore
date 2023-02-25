@@ -1,0 +1,14 @@
+/custom_components
+/owntone
+/themes
+/www
+/.cloud
+/deps
+/.storage
+/.HA_VERSION
+/home-assistant_v2.db
+/home-assistant_v2.db-shm
+/home-assistant_v2.db-wal
+/home-assistant.log
+/home-assistant.log.1
+/home-assistant.log.fault

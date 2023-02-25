@@ -1,0 +1,39 @@
+title: "Bedroom"
+path: "bedroom"
+
+cards:
+    - type: "custom:button-card"
+      template: chip_back
+      variables:
+        ulm_chip_back_path: home
+
+    - type: 'custom:button-card'
+      template: card_title
+      name: "Overview"
+    
+    - type: custom:mushroom-light-card
+      entity: light.bed_lamp
+      icon: mdi:floor-lamp
+      use_light_color: false
+      show_brightness_control: true
+      show_color_control: true
+      show_color_temp_control: true
+      collapsible_controls: true
+
+    - type: custom:mushroom-light-card
+      entity: light.desk_lamp
+      icon: mdi:desk-lamp
+      use_light_color: false
+      show_brightness_control: true
+      show_color_control: true
+      show_color_temp_control: true
+      collapsible_controls: true
+
+    - type: custom:mushroom-light-card
+      entity: light.bed_strip
+      icon: mdi:led-strip-variant
+      use_light_color: false
+      show_brightness_control: true
+      show_color_control: true
+      show_color_temp_control: true
+      collapsible_controls: true

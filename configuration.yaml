@@ -1,0 +1,49 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+rest_command:
+  strip_on:
+    url: http://10.0.0.63:8000/on
+    method: get
+    content_type: application/json
+  strip_off:
+    url: http://10.0.0.63:8000/off
+    method: get
+    content_type: application/json
+  strip_set_temperature:
+    url: http://10.0.0.63:8000/temperature
+    method: post
+    content_type: application/json
+    payload: '{ "temperature": {{ temperature }} }'
+  strip_set_brightness:
+    url: http://10.0.0.63:8000/brightness
+    method: post
+    content_type: application/json
+    payload: '{ "brightness": {{ brightness_pct }} }'
+
+light:
+  - platform: template
+    lights:
+        bed_strip:
+            friendly_name: "Bed Strip"
+            turn_off:
+              service: rest_command.strip_off
+            turn_on:
+              service: rest_command.strip_on
+            set_temperature:
+              service: rest_command.strip_set_temperature
+              data: 
+                temperature: "{{ color_temp }}"

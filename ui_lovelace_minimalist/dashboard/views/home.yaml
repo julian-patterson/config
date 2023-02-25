@@ -1,0 +1,124 @@
+title: "Home"
+path: "home"
+cards:
+  - type: "custom:button-card"
+    template: card_esh_welcome
+    triggers_update: "input_boolean.minimalist_dropdown"
+    variables:
+      ulm_card_esh_welcome_collapse: input_boolean.minimalist_dropdown
+      ulm_weather: "sensor.openweathermap_condition"
+      entity_1:
+        nav: "house"
+        icon: "mdi:home"
+        name: "House"
+        color: "blue"
+      entity_2:
+        nav: "lights"
+        icon: "mdi:lightbulb"
+        name: "Lights"
+        color: "yellow"
+      entity_3:
+        nav: "bedroom"
+        icon: "mdi:bed-king"
+        name: Room
+        color: "green"
+      entity_4:
+        nav: "network"
+        icon: "mdi:nas"
+        name: Lab
+        color: "purple"
+      entity_5:
+        nav: "network"
+        icon: "mdi:flask"
+        name: Lab
+        color: "red"
+  
+  - type: horizontal-stack
+    alignment: center
+    cards:
+      - type: custom:mushroom-chips-card
+        chips:
+          - type: entity
+            entity: update.home_assistant_core_update
+        alignment: center
+      - type: custom:mushroom-chips-card
+        chips:
+          - type: entity
+            entity: sensor.openweathermap_feels_like_temperature
+            use_entity_picture: false
+            content_info: state
+        alignment: center
+      - type: custom:mushroom-chips-card
+        chips:
+          - type: entity
+            entity: light.bedroom_lights
+            tap_action:
+              action: toggle
+        alignment: center
+
+  - type: 'custom:button-card'
+    template: card_title
+    name: "Overview"
+  
+  - type: custom:mini-media-player
+    entity: media_player.bedroom
+    volume_stateless: false
+    name: HomePod
+    artwork: material
+    source: icon
+    icon: mdi:cast-audio-variant
+    sound_mode: full
+    toggle_power: false
+  
+  - type: custom:mini-media-player
+    entity: media_player.basement_tv
+    volume_stateless: false
+    name: TV
+    artwork: material
+    source: icon
+    sound_mode: full
+    toggle_power: false
+
+
+  - type: 'custom:button-card'
+    template: card_title
+    name: "Scenes"
+  
+  - type: vertical-stack
+    cards:
+      - type: horizontal-stack
+        cards:
+          - type: custom:mushroom-template-card
+            primary: Night Light
+            secondary: ''
+            icon: mdi:bed
+            entity: scene.night_light
+            layout: vertical
+            icon_color: 'amber'
+            tap_action:
+              action: toggle
+          - type: custom:mushroom-template-card
+            primary: Ocean
+            secondary: ''
+            icon: mdi:waves
+            entity: scene.night_light
+            layout: vertical
+            icon_color: 'indigo'
+            tap_action:
+              action: toggle
+      - type: horizontal-stack
+        cards:
+          - type: custom:mushroom-entity-card
+            entity: scene.brightness_100
+            name: Turn On
+            icon_color: white
+            secondary_info: none
+            layout: vertical
+            tap_action:
+              action: toggle
+          - type: custom:mushroom-template-card
+            entity: scene.brightness_100
+            name: Turn On
+            icon_color: white
+            secondary_info: none
+            layout: vertical
