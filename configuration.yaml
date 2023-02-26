@@ -43,12 +43,14 @@ light:
   - platform: template
     lights:
         bed_strip:
-            color_template: "({{('input_number.h_input') | int}}, {{('input_number.s_input') | int}})"
             friendly_name: "Bed Strip"
             turn_off:
               service: rest_command.strip_off
             turn_on:
-              service: rest_command.strip_on
+              - service: rest_command.strip_on
+              - service: rest_command.strip_set_brightness
+                data:
+                  brightness: "{{ 127.5/2.55 }}"
             set_temperature:
               service: rest_command.strip_set_temperature
               data: 
@@ -56,7 +58,7 @@ light:
             set_level:
               service: rest_command.strip_set_brightness
               data:
-                brightness: "{{ brightness }}"
+                brightness: "{{ brightness/2.55 }}"
             set_color:
               service: rest_command.strip_set_hsv
               data:
