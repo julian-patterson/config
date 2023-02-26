@@ -32,12 +32,18 @@ rest_command:
     url: http://10.0.0.63:8000/brightness
     method: post
     content_type: application/json
-    payload: '{ "brightness": {{ brightness_pct }} }'
+    payload: '{ "brightness": {{ brightness }} }'
+  strip_set_hsv:
+    url: http://10.0.0.63:8000/hsv
+    method: post
+    content_type: application/json
+    payload: '{ "h": {{ h }}, "s": {{ s }}, "v": 100 }'
 
 light:
   - platform: template
     lights:
         bed_strip:
+            color_template: "({{('input_number.h_input') | int}}, {{('input_number.s_input') | int}})"
             friendly_name: "Bed Strip"
             turn_off:
               service: rest_command.strip_off
@@ -47,3 +53,14 @@ light:
               service: rest_command.strip_set_temperature
               data: 
                 temperature: "{{ color_temp }}"
+            set_level:
+              service: rest_command.strip_set_brightness
+              data:
+                brightness: "{{ brightness }}"
+            set_color:
+              service: rest_command.strip_set_hsv
+              data:
+                h: "{{ h }}"
+                s: "{{ s }}"
+
+            
