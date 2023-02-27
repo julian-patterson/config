@@ -157,19 +157,19 @@ cards:
         cards:
           - type: custom:mushroom-entity-card
             entity: scene.study
-            name: Red
-            icon: mdi:eye
-            icon_color: red
+            name: Study
+            icon: mdi:chair-rolling
+            icon_color: grey
             secondary_info: none
             layout: vertical
             tap_action:
               action: toggle
           - type: custom:mushroom-template-card
-            entity: scene.calm
-            primary: Calm
-            name: Calm
-            icon_color: light-blue
-            icon: mdi:mushroom
+            entity: scene.bed_light
+            primary: Bed Light
+            name: Bed Light
+            icon_color: blue-grey
+            icon: mdi:led-strip-variant
             layout: vertical
             tap_action:
               action: toggle
