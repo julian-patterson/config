@@ -112,13 +112,58 @@ cards:
             entity: scene.brightness_100
             name: Turn On
             icon_color: white
+            icon: mdi:lightbulb
             secondary_info: none
             layout: vertical
             tap_action:
               action: toggle
           - type: custom:mushroom-template-card
-            entity: scene.brightness_100
-            name: Turn On
-            icon_color: white
+            entity: scene.rose
+            primary: Rose
+            name: Rose
+            icon_color: pink
+            icon: mdi:flower
+            layout: vertical
+            tap_action:
+              action: toggle
+      - type: horizontal-stack
+        cards:
+          - type: custom:mushroom-entity-card
+            entity: scene.red
+            name: Red
+            icon: mdi:eye
+            icon_color: red
             secondary_info: none
             layout: vertical
+            tap_action:
+              action: toggle
+          - type: custom:mushroom-template-card
+            entity: scene.calm
+            primary: Calm
+            name: Calm
+            icon_color: light-blue
+            icon: mdi:mushroom
+            layout: vertical
+            tap_action:
+              action: toggle
+
+      - type: horizontal-stack
+        cards:
+          - type: custom:mushroom-entity-card
+            entity: scene.study
+            name: Study
+            icon: mdi:chair-rolling
+            icon_color: grey
+            secondary_info: none
+            layout: vertical
+            tap_action:
+              action: toggle
+          - type: custom:mushroom-template-card
+            entity: scene.bed_light
+            primary: Bed Light
+            name: Bed Light
+            icon_color: blue-grey
+            icon: mdi:led-strip-variant
+            layout: vertical
+            tap_action:
+              action: toggle
