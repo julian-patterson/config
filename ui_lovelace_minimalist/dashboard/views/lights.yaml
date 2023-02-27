@@ -1,0 +1,16 @@
+title: "Lights"
+path: "lights"
+
+cards:
+    - type: "custom:button-card"
+      template: chip_back
+      variables:
+        ulm_chip_back_path: home
+      
+    - type: custom:mini-graph-card
+      entities:
+        - sensor.bed_lamp_current_consumption
+
+    - type: custom:mini-graph-card
+      entities:
+        - sensor.desk_lamp_current_consumption

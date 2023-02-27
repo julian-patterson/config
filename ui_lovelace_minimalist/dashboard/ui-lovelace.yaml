@@ -7,3 +7,5 @@ background: "var(--background-image)"
 views:
   - !include views/home.yaml
   - !include views/bedroom.yaml
+  - !include views/lights.yaml
+

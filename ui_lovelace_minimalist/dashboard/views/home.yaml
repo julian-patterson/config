@@ -79,6 +79,12 @@ cards:
     sound_mode: full
     toggle_power: false
 
+  - type: custom:mushroom-light-card
+    entity: light.bedroom_lights
+    show_color_control: true
+    show_brightness_control: true
+    show_color_temp_control: true
+
 
   - type: 'custom:button-card'
     template: card_title
@@ -101,7 +107,7 @@ cards:
             primary: Ocean
             secondary: ''
             icon: mdi:waves
-            entity: scene.night_light
+            entity: scene.ocean
             layout: vertical
             icon_color: 'indigo'
             tap_action:
@@ -112,13 +118,58 @@ cards:
             entity: scene.brightness_100
             name: Turn On
             icon_color: white
+            icon: mdi:lightbulb
             secondary_info: none
             layout: vertical
             tap_action:
               action: toggle
           - type: custom:mushroom-template-card
-            entity: scene.brightness_100
-            name: Turn On
-            icon_color: white
+            entity: scene.rose
+            primary: Rose
+            name: Rose
+            icon_color: pink
+            icon: mdi:flower
+            layout: vertical
+            tap_action:
+              action: toggle
+      - type: horizontal-stack
+        cards:
+          - type: custom:mushroom-entity-card
+            entity: scene.red
+            name: Red
+            icon: mdi:eye
+            icon_color: red
             secondary_info: none
             layout: vertical
+            tap_action:
+              action: toggle
+          - type: custom:mushroom-template-card
+            entity: scene.calm
+            primary: Calm
+            name: Calm
+            icon_color: light-blue
+            icon: mdi:mushroom
+            layout: vertical
+            tap_action:
+              action: toggle
+
+      - type: horizontal-stack
+        cards:
+          - type: custom:mushroom-entity-card
+            entity: scene.study
+            name: Red
+            icon: mdi:eye
+            icon_color: red
+            secondary_info: none
+            layout: vertical
+            tap_action:
+              action: toggle
+          - type: custom:mushroom-template-card
+            entity: scene.calm
+            primary: Calm
+            name: Calm
+            icon_color: light-blue
+            icon: mdi:mushroom
+            layout: vertical
+            tap_action:
+              action: toggle
